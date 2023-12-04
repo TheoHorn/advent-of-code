@@ -2,11 +2,11 @@ package day2;
 
 import java.io.*;
 
-class day2{
+class silver_star{
 
     BufferedReader txt;
 
-    public day2(File file) throws IOException{
+    public silver_star(File file) throws IOException{
         try{
             this.txt = new BufferedReader(new FileReader(file));
             System.out.println(this.fonction());
@@ -45,7 +45,7 @@ class day2{
 
     public static void main(String[] args) throws IOException {
         File file = new File("day2/input.txt");
-        day2 day2 = new day2(file);
+        silver_star day2 = new silver_star(file);
         
     }
 }

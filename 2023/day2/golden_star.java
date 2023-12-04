@@ -6,12 +6,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class day2_2 {
+public class golden_star {
  
     
     BufferedReader txt;
 
-    public day2_2(File file) throws IOException{
+    public golden_star(File file) throws IOException{
         try{
             this.txt = new BufferedReader(new FileReader(file));
             System.out.println(this.fonction());
@@ -48,7 +48,7 @@ public class day2_2 {
 
     public static void main(String[] args) throws IOException {
         File file = new File("day2/input.txt");
-        day2_2 day2_2 = new day2_2(file);
+        golden_star day2_2 = new golden_star(file);
         
     }
 }

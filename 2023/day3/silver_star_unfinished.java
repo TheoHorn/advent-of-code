@@ -4,11 +4,11 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class day3{
+class silver_star_unfinished{
 
     BufferedReader txt;
 
-    public day3(File file) throws IOException{
+    public silver_star_unfinished(File file) throws IOException{
         try{
             this.txt = new BufferedReader(new FileReader(file));
             System.out.println(this.function());
@@ -40,7 +40,7 @@ class day3{
 
     public static void main(String[] args) throws IOException {
         File file = new File("day3/input.txt");
-        day3 day3 = new day3(file);
+        silver_star_unfinished day3 = new silver_star_unfinished(file);
         
     }
 }
