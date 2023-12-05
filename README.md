@@ -2,7 +2,7 @@
 
 **All of my solutions to the Advent of Code challenges**
 Summary :
- - [2015](https://github.com/TheoHorn/advent-of-code/tree/main/2015) : 6/25 -- *Work in progress* 
+ - [2015](https://github.com/TheoHorn/advent-of-code/tree/main/2015) : 7/25 -- *Work in progress* 
  - 2016 : 0/25
  - 2017 : 0/25
  - 2018 : 0/25
