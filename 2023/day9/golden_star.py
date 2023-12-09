@@ -1,3 +1,5 @@
+from time import perf_counter
+
 def find_next(line):
 
     tab = []
@@ -13,14 +15,25 @@ def find_next(line):
         return val1 + val2
 
 
+def test():
+    start = perf_counter()
 
-somme = 0
-with open('2023/day9/input.txt') as f:
-    lines = f.readlines()
-    for line in lines:
-        line = list(map(int, line.split(' ')))
-        line.reverse()
-        print(line)
-        val = find_next(line)
-        somme += val
-print(somme)
+    
+    somme = 0
+    with open('2023/day9/input.txt') as f:
+        lines = f.readlines()
+        for line in lines:
+            line = list(map(int, line.split(' ')))
+            line.reverse()
+            #print(line)
+            val = find_next(line)
+            somme += val
+    print(somme)
+
+    stop = perf_counter()
+    return stop-start
+
+s = 0
+for i in range(10000):
+    s += test()
+print(s/10000)
