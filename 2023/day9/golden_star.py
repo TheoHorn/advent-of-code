@@ -19,6 +19,8 @@ with open('2023/day9/input.txt') as f:
     lines = f.readlines()
     for line in lines:
         line = list(map(int, line.split(' ')))
+        line.reverse()
+        print(line)
         val = find_next(line)
         somme += val
 print(somme)
