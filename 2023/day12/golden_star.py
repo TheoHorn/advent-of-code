@@ -4,9 +4,10 @@ import functools
 
 def configurations(config, group):
 
-    
+    #si on a fini de tester les groupes
     if (len(group) == 0):
         a = 0
+        #si il reste des # -> nok
         for c in config:
             if c == 1:
                 a += 1
@@ -14,24 +15,30 @@ def configurations(config, group):
             return 1
         else:
             return 0
-        
+    
+    #si il reste pas assez de place pour le groupe
     if sum(group) > len(config):
         return 0
     
+    #si on est sur un point, on passe au suivant
     if config[0] == 0:
         a = configurations(config[1:], group)
         return a
 
     no1, no2 = 0, 0
+
+    #si on est sur un ?, on teste notre groupe sur la suite 
     if config[0] == 2:
         no2 = configurations(config[1:], group)
 
     
+    #si on trouve un 0 après dans les group[0]-nième valeur -> nok
     bool = True
     for c in config[:group[0]]:
         if c == 0:
             bool = False
 
+    #si notre groupe est bon -> ok
     bool2 = False
     if len(config) > group[0]:
         if config[group[0]] == 1:
@@ -39,6 +46,7 @@ def configurations(config, group):
     else:
         bool2 = False
         
+    #si 1 et 2 -> ok, on teste la suite à la prochaine valeur et avec le groupe suivant
     if bool and bool2 != 1:
         no1 = configurations(config[(group[0] + 1):], group[1:])
      
