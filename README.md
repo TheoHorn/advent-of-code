@@ -10,5 +10,5 @@ Summary :
  - 2020 : 0/25
  - 2021 : 0/25
  - 2022 : 0/25
- - [2023](https://github.com/TheoHorn/advent-of-code/tree/main/2023) : 8/8 -- *Work in progress*
+ - [2023](https://github.com/TheoHorn/advent-of-code/tree/main/2023) : 13/13 -- *Work in progress*
 
