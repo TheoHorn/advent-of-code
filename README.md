@@ -12,3 +12,4 @@ Summary :
  - 2022 : 0/25
  - [2023](https://github.com/TheoHorn/advent-of-code/tree/main/2023) : 16/25
 
+The goal is to (one day I hope) achieve all of the aoc problems. 
