@@ -1,36 +1,33 @@
-input = "cqjxjnds"
+import re
+valt = "cqjxjnds"
 
 def verif_password(input):
     if "i" in input or "o" in input or "l" in input:
         return False
-    
-    for i in range(len(input)-2):
-        if ord(input[i]) == ord(input[i+1]) - 1 and ord(input[i]) == ord(input[i+2]) - 2:
-            break
-        else:
-            return False
 
-    for i in range(len(input)-1):
-        if input[i] == input[i+1]:
-            for j in range(i+2, len(input)-1):
-                if input[j] == input[j+1]:
-                    return True
+    if len(re.findall(r'(\w)\1', input)) < 2:
+        return False
+
+    for i in range(len(input) - 2):
+        if ord(input[i]) + 1 == ord(input[i + 1]) and ord(input[i + 1]) + 1 == ord(input[i + 2]):
+            return True
     return False
 
 def next_password(inp):
-    i = len(inp) - 1
-    bool = True
-    while verif_password(inp) or bool:
-        bool = False
-        if inp[i] == 'z':
-            inp = inp[:i] + 'a' + inp[i+1:]
-            i = i-1
-        else:
-            inp = inp[:i] + chr(ord(inp[i])+1) + inp[i+1:]
-    print(inp)
+    inp = list(inp)
+    while not verif_password("".join(inp)):
+        i = len(inp) - 1
+        while i >= 0:
+            if inp[i] == 'z':
+                inp[i] = 'a'
+                i -= 1
+            else:
+                inp[i] = chr(ord(inp[i]) + 1)
+                break
+    return "".join(inp)
 
-print(ord('a'))
-next_password(input)    
+
+print(next_password("cqjxxzaa"))
     
 
         
