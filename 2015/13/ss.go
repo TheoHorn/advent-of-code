@@ -16,7 +16,7 @@ func main() {
 	lines := strings.Split(str, "\n")
 	dictionary := make(map[string]int)
 	for _, line := range lines {
-
+		dictionary[line] = 1
 	}
 	fmt.Println(str)
 }
