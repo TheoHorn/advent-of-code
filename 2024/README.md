@@ -82,8 +82,9 @@ This problem involved searching for a specific pattern ("XMAS") in a grid-like s
 **Solution:**  
 I iterated through each cell in the grid, checking in all 8 possible directions for the sequence "XMAS". For each direction (right, left, up, down, and the four diagonal directions), I verified if there was enough space in the grid to form the sequence and checked if the characters matched the required sequence. Whenever a match was found, I incremented the count. This approach ensured all directions were covered.
 
-**My Thoughts:**  
+**My Thoughts:**
 This problem was straightforward but required attention to detail, particularly when dealing with multiple directions and ensuring that grid boundaries were respected. It was fun to implement, though at first, I had to think through how to handle edge cases (e.g., when there wasn't enough space in a direction to form the sequence). Overall, I found the problem quite enjoyable.
+
 ---
 
 
