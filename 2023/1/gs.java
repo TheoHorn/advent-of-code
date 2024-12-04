@@ -2,11 +2,11 @@ package day1;
 
 import java.io.*;
 
-class golden_star{
+class gs{
 
     BufferedReader txt;
 
-    public golden_star(File file) throws IOException{
+    public gs(File file) throws IOException{
         try{
             this.txt = new BufferedReader(new FileReader(file));
             System.out.println(this.fonction());
@@ -114,7 +114,7 @@ class golden_star{
 
     public static void main(String[] args) throws IOException {
         File file = new File("day1/input1.txt");
-        golden_star day1 = new golden_star(file);
+        gs day1 = new gs(file);
         
     }
 }
