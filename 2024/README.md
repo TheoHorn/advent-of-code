@@ -45,8 +45,9 @@ The problem involved comparing two lists of integers and calculating a specific 
 **Solution:**  
 I read the input file and split the lines into two lists of integers. Then, I sorted both lists to facilitate comparison. For each value in the first list, I counted how many times it appeared in the second list, then multiplied the frequency by the value itself and added the result to a cumulative sum. This approach required nested loops to count occurrences and efficiently calculate the final difference.
 
-**My Thoughts:**  
+**My Thoughts:**
 The problem was fairly straightforward once I broke it down into sorting and counting operations. However, the nested loop for counting occurrences in the second list made it less efficient for larger datasets. While solving this, I was reminded of the importance of sorting and looking for patterns to simplify problems. It was enjoyable to solve, though I could see potential for optimizing the algorithm for larger inputs.
+
 ---
 
 ### Day [2]: [Red-Nosed Reports](./2/)  
@@ -81,8 +82,9 @@ This problem involved searching for a specific pattern ("XMAS") in a grid-like s
 **Solution:**  
 I iterated through each cell in the grid, checking in all 8 possible directions for the sequence "XMAS". For each direction (right, left, up, down, and the four diagonal directions), I verified if there was enough space in the grid to form the sequence and checked if the characters matched the required sequence. Whenever a match was found, I incremented the count. This approach ensured all directions were covered.
 
-**My Thoughts:**  
+**My Thoughts:**
 This problem was straightforward but required attention to detail, particularly when dealing with multiple directions and ensuring that grid boundaries were respected. It was fun to implement, though at first, I had to think through how to handle edge cases (e.g., when there wasn't enough space in a direction to form the sequence). Overall, I found the problem quite enjoyable.
+
 ---
 
 
