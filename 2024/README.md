@@ -11,7 +11,7 @@ Welcome to my solutions for the **Advent of Code [2024]** challenges! Below, you
 | 2   | [Red-Nosed Reports](#day-2) | [Solution](./2/)     | ★★☆☆☆      | First problem of the year |
 | 3   | [Mull It Over](#day-3)| [Solution](./3/)     | ★☆☆☆☆     | A little bit of regex                  |
 | 4   | [Ceres Search](#day-4)| [Solution](./4/)     | ★★☆☆☆      | Brute force is always the best                  |
-| 5   | [5](#day-5)                   | [Solution](./5/)     | ★★★★☆      |                      |
+| 5   | [Print Queue](#day-5)                   | [Solution](./5/)     | ★★★☆☆     | Some thinking is required                |
 | 6   | [6](#day-6)                   | [Solution](./6/)     | ★★★★☆      |                      |
 | 7   | [7](#day-7)                   | [Solution](./7/)     | ★★★★☆      |                      |
 | 8   | [8](#day-8)                   | [Solution](./8/)     | ★★★★☆      |                      |
@@ -85,6 +85,18 @@ I iterated through each cell in the grid, checking in all 8 possible directions 
 **My Thoughts:**
 This problem was straightforward but required attention to detail, particularly when dealing with multiple directions and ensuring that grid boundaries were respected. It was fun to implement, though at first, I had to think through how to handle edge cases (e.g., when there wasn't enough space in a direction to form the sequence). Overall, I found the problem quite enjoyable.
 
+---
+
+### Day [5]: [Print Queue](./5/)  
+
+**Problem Summary:**  
+This problem dealt with simulating a print queue system where pages needed to be printed in a specific order based on dependencies. The dependencies were represented as pairs of pages, where one page must be printed before another. The task involved verifying if the print order was correct and adjusting it if necessary. The solution required implementing logic for both validation and reordering to ensure the constraints were satisfied.
+
+**Solution:**  
+I started by parsing the input into two parts: the dependency rules and the sequences of pages to be printed. A dictionary was used to store the dependencies for each page. For each sequence of pages, I first verified if the order was valid using the `verify` function, which checked if the dependency constraints were met. If not, the `correct_ordering` function iteratively adjusted the order by swapping elements to resolve conflicts. After validating or correcting a sequence, I calculated the result based on the middle index of the final ordered sequence.
+
+**My Thoughts:**  
+This problem was an interesting exercise in dependency resolution and queue management. Implementing the reordering logic to handle conflicts required careful thought, especially to avoid infinite loops. Debugging the logic for swapping and ensuring correctness was slightly challenging but satisfying once resolved.
 ---
 
 
