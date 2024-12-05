@@ -7,7 +7,7 @@ Advent of Code is an annual programming challenge that takes place every Decembe
 
 | Year  | Completion Status | Link to Solutions                        |
 |-------|--------------------|------------------------------------------|
-| 2015  | ⭐ 14/25           | [Solutions for 2015](https://github.com/TheoHorn/advent-of-code/tree/main/2015) |
+| 2015  | ⭐ 17/25           | [Solutions for 2015](https://github.com/TheoHorn/advent-of-code/tree/main/2015) |
 | 2016  | ❌ 0/25            |                                          |
 | 2017  | ❌ 0/25            |                                          |
 | 2018  | ❌ 0/25            |                                          |
