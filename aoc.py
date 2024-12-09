@@ -40,6 +40,12 @@ def inputing(year=2024, day=1):
     with open(f'{year}/{day}/input.txt', 'w') as file:
         file.write(content)
 
+    with open(f'{year}/{day}/ss.py', 'w') as f:
+        f.close()
+
+    with open(f'{year}/{day}/gs.py', 'w') as f:
+        f.close()
+        
     return content
 
 def outputing(year=2024, day=1, part=1, answer=None):
@@ -85,5 +91,5 @@ def outputing(year=2024, day=1, part=1, answer=None):
         return f"Error: Unable to submit the answer. Details: {str(e)}"
     
 
-inputing(year=2024, day=8)
+inputing(year=2024, day=9)
 #print(outputing(year=2015, day=13, part=1, answer=822))
