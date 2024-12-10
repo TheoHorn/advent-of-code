@@ -16,7 +16,7 @@ Advent of Code is an annual programming challenge that takes place every Decembe
 | 2021  | ❌ 0/25            |                                          |
 | 2022  | ❌ 0/25            |                                          |
 | 2023  | ⭐ 18/25           | [Solutions for 2023](https://github.com/TheoHorn/advent-of-code/tree/main/2023) |
-| 2024  | ⭐ 4/4             | [Solutions for 2024](https://github.com/TheoHorn/advent-of-code/tree/main/2024) |
+| 2024  | ⭐ 9/9             | [Solutions for 2024](https://github.com/TheoHorn/advent-of-code/tree/main/2024) |
 
 ## Repository Highlights
 - Each year's solutions are organized into separate directories for clarity and accessibility.
