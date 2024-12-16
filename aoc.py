@@ -91,5 +91,5 @@ def outputing(year=2024, day=1, part=1, answer=None):
         return f"Error: Unable to submit the answer. Details: {str(e)}"
     
 
-inputing(year=2024, day=10)
+inputing(year=2016, day=1)
 #print(outputing(year=2015, day=13, part=1, answer=822))
