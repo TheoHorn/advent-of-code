@@ -54,7 +54,7 @@ def solve(size, res, a, b, c):
             elif op == 7:
                 c = a // 2**val
             i += 2
-        if w == numbers[size] and solve(size - 1, res << 3 | bits, a, b, c):
+        if w == numbers[size] and solve(size - 1, res * 8 | bits, a, b, c):
             return True
     return False
 
