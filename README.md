@@ -8,7 +8,7 @@ Advent of Code is an annual programming challenge that takes place every Decembe
 | Year  | Completion Status | Link to Solutions                        |
 |-------|--------------------|------------------------------------------|
 | 2015  | ⭐ 25/25 ⭐       | [Solutions for 2015](https://github.com/TheoHorn/advent-of-code/tree/main/2015) |
-| 2016  | ⭐ 1/25            | [Solutions for 2016](https://github.com/TheoHorn/advent-of-code/tree/main/2016) |                                         |
+| 2016  | ⭐ 7/25            | [Solutions for 2016](https://github.com/TheoHorn/advent-of-code/tree/main/2016) |                                         |
 | 2017  | ❌ 0/25            |                                          |
 | 2018  | ❌ 0/25            |                                          |
 | 2019  | ❌ 0/25            |                                          |
@@ -16,7 +16,7 @@ Advent of Code is an annual programming challenge that takes place every Decembe
 | 2021  | ❌ 0/25            |                                          |
 | 2022  | ❌ 0/25            |                                          |
 | 2023  | ⭐ 19/25           | [Solutions for 2023](https://github.com/TheoHorn/advent-of-code/tree/main/2023) |
-| 2024  | ⭐ 16/16           | [Solutions for 2024](https://github.com/TheoHorn/advent-of-code/tree/main/2024) |
+| 2024  | ⭐ 18/18           | [Solutions for 2024](https://github.com/TheoHorn/advent-of-code/tree/main/2024) |
 
 ## Repository Highlights
 - Each year's solutions are organized into separate directories for clarity and accessibility.
